@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back End Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <main>
+  <main class="container">
+
+    <h1>Positive affirmations</h1>
+    <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get a fortune</button>
+
+    <h3>Ok, some of those fortunes were a little harsh. Here, have a fortuneless cookie!</h3>
+    <h3>If you see one you don't like, get rid of it!</h3>
+    <h3>Or, add one in that you do like but don't see!</h3>
+    <form>
+      <input 
+          type='text'
+          id="cookie"
+          placeholder="What's the cookie flavor?"/>
+      <input 
+          type='text'
+          id="img"
+          placeholder='Paste an image URL'/>
+    </form>
+
+    <section id="cookie-jar"></section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  
+  </main>
+  </body>
+</html>

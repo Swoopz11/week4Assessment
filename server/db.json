@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "cookie": "Chocolate Chip",
+        "imageURL": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F23%2F2011%2F11%2F03%2Fchocolatechip-cookies_300.jpg&q=60"
+    },
+    {
+        "id": 2,
+        "cookie": "Snickerdoodle",
+        "imageURL": "https://sallysbakingaddiction.com/wp-content/uploads/2013/05/snickerdoodles-recipe.jpg"
+    },
+    {
+        "id": 3,
+        "cookie": "Nutella",
+        "imageURL": "https://sugargeekshow.com/wp-content/uploads/2021/10/nutella_stuffed_cookies_FEATURED.jpg"
+    },
+    {
+        "id": 4,
+        "cookie": "Macadamia Nut",
+        "imageURL": "https://www.browneyedbaker.com/wp-content/uploads/2009/07/white-chocolate-macadamia-nut-cookies-main.jpg"
+    }
+]
