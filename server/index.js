@@ -7,7 +7,7 @@ app.use(cors());
 
 app.use(express.json());
 
-const { getCompliment, getFortune, getCookies } = require('./controller')
+const { getCompliment, getFortune, getCookies, createCookie, deleteCookie } = require('./controller')
 
 //Endpoints-------------------------------------
 
@@ -17,12 +17,10 @@ app.get("/api/fortune", getFortune);
 
 app.get("/api/cookies", getCookies);
 
-// app.get('/api/cookie', createCookie);
+app.post('/api/cookies', createCookie);
 
-// app.get('/api/cookie', updateCookie);
-
-// app.get('/api/cookie', deleteCookie);
+app.delete('/api/cookies/:id', deleteCookie);
 
 //----------------------------------------------
 
-app.listen(4000, () => console.log("Server running on 4000"));
+app.listen(4000, () => console.log("Chillin on 4000"));

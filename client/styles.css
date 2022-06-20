@@ -1,9 +1,15 @@
+body {
+    background-color: rgb(163, 254, 251);
+}
 
+.headers {
+    color: rgb(0, 0, 0);
+}
 
 form {
     width: 350px;
     height: 350px;
-    background-color: rgb(240, 255, 166);
+    background-color: rgb(248, 198, 121);
     position: relative;
     display: flex; 
     flex-direction: column;
@@ -18,5 +24,32 @@ input[type='text'] {
     border: none;
     border-bottom: 2px solid #232323;
     color: #232323;
-    background-color: rgb(240, 255, 166);
+    background-color: rgb(248, 198, 121);
+}
+
+#cookie-jar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-cover {
+    width: 200px; 
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+   
+
+.cookie-card {
+    background-color: rgb(248, 198, 121);
+    width: 200px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }

@@ -23,8 +23,23 @@ module.exports = {
         res.status(200).send(randomFortune)
     },
 
-    getCookies: (req,res) => {
-        res.status(200).send(cookies)
-    }
+    getCookies: (req,res) => res.status(200).send(cookies),
 
+    deleteCookie: (req, res) => {
+        let index = cookies.findIndex(elem => elem.id === +req.params.id)
+        cookies.splice(index, 1)
+        res.status(200).send(cookies)
+    },
+
+    createCookie: (req,res) => {
+        const {cookie, imageURL} = req.body
+        let newCookie = {
+            cookie,
+            imageURL,
+            id: globalID
+        }
+        cookies.push(newCookie)
+        globalID++
+        res.status(200).send(cookies)
+    },
 }
